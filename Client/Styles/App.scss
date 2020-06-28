@@ -1,0 +1,91 @@
+﻿.primary-button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    border: 1px solid #3b3a39;
+    color: #3b3a39;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        text-decoration: none;
+        color: #3b3a39;
+    }
+}
+
+.shadow-effect {
+    transition: 0.3s;
+
+    &:hover {
+        -webkit-box-shadow: 0px 4px 15px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 4px 15px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 4px 15px -6px rgba(0, 0, 0, 0.75);
+    }
+}
+
+.calendar-table {
+    margin: 10px;
+    width: 100%;
+    background-color: #f3f2f1;
+    text-align: center;
+
+    thead {
+        background-color: white;
+    }
+
+    .day {
+        width: 125px;
+        height: 100px;
+        min-width: 125px;
+        margin: 2px;
+        border-radius: 5px;
+        background-color: white;
+        padding: 5px;
+        cursor: pointer;
+
+        &.current-day {
+            border: 2px solid #0078d4;
+            color: #0078d4;
+        }
+
+        &.selected-day {
+            border: 2px solid #004578;
+            color: #004578;
+            background-color: #c7e0f4;
+        }
+
+        .day-event {
+            font-size: 10px;
+            padding: 5px;
+        }
+    }
+}
+
+.red-orange {
+    background-color: #da3b01;
+    color: white;
+}
+
+.magenta {
+    background-color: #881798;
+    color: white;
+}
+
+.pink-red {
+    background-color: #750b1c;
+    color: white;
+}
+
+.yellow {
+    background-color: #fce100;
+    color: black;
+}
+
+.yellow-green {
+    background-color: #8cbd18;
+    color: black;
+}
