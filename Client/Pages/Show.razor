@@ -1,0 +1,61 @@
+﻿@page "/calendar/{Name}"
+
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-9">
+        <Calendar>
+            <DayTemplate Context="day">
+                @{
+                    var currentDayClass = day.Date == DateTime.Now.Date ? "current-day" : "";
+                }
+                @if (!day.IsEmpty)
+                {
+                    <div class="day shadow-effect @currentDayClass">
+                        <h3 class="ms-fontSize-24 ms-fontWeight-regular">
+                            @day.Number
+                        </h3>
+                    </div>
+                }
+            </DayTemplate>
+        </Calendar>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-3">
+        <div class="card ms-depth-16">
+            <div class="calendar-toolbar">
+                <button class="toolbar-button">
+                    <i class="ms-Icon ms-Icon--AddEvent"></i>
+                </button>
+            </div>
+            <div class="card-content">
+                <input type="text" class="fluent-input" placeholder="Event Subject" />
+                <input type="time" class="fluent-input" />
+                <input type="time" class="fluent-input" />
+            </div>
+        </div>
+        <div class="card ms-depth-16">
+            <div class="card-content">
+                <h3 class="ms-fontSize-22 ms-fontWeight-regular">Tuesday, 22 May 2020</h3>
+                <div class="event shadow-effect magenta">
+                    <h3 class="ms-fontSize-14 ms-fontWeight-regular">6:00pm to 8:00pm</h3>
+                    <p class="ms-fontSize-11 ms-fontWeight-regular">Lorem ipsum</p>
+                </div>
+                <div class="event shadow-effect yellow">
+                    <h3 class="ms-fontSize-14 ms-fontWeight-regular">6:00pm to 8:00pm</h3>
+                    <p class="ms-fontSize-11 ms-fontWeight-regular">Lorem ipsum</p>
+                </div>
+                <div class="event shadow-effect red-orange">
+                    <h3 class="ms-fontSize-14 ms-fontWeight-regular">6:00pm to 8:00pm</h3>
+                    <p class="ms-fontSize-11 ms-fontWeight-regular">Lorem ipsum</p>
+                </div>
+                <div class="event shadow-effect yellow-green">
+                    <h3 class="ms-fontSize-14 ms-fontWeight-regular">6:00pm to 8:00pm</h3>
+                    <p class="ms-fontSize-11 ms-fontWeight-regular">Lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Name { get; set; }
+}
