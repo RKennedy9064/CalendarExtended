@@ -27,39 +27,112 @@
     }
 }
 
-.calendar-table {
-    margin: 10px;
-    width: 100%;
-    background-color: #f3f2f1;
-    text-align: center;
+.calendar {
+    padding: 10px;
 
-    thead {
-        background-color: white;
+    .calendar-table {
+        width: 100%;
+        background-color: #f3f2f1;
+        text-align: center;
+
+        thead {
+            background-color: white;
+        }
+
+        td {
+            padding: 3px;
+        }
+
+        .day {
+            width: 125px;
+            height: 100px;
+            min-width: 125px;
+            margin: 2px;
+            border-radius: 5px;
+            background-color: white;
+            padding: 5px;
+            cursor: pointer;
+
+            @media (max-width: 900px) {
+                width: 100%;
+                height: 50px;
+                min-width: auto;
+
+                .day-event {
+                    display: none;
+                }
+            }
+
+            &.current-day {
+                border: 2px solid #0078d4;
+                color: #0078d4;
+            }
+
+            &.selected-day {
+                border: 2px solid #004578;
+                color: #004578;
+                background-color: #c7e0f4;
+            }
+
+            .day-event {
+                font-size: 10px;
+                padding: 5px;
+            }
+        }
     }
+}
 
-    .day {
-        width: 125px;
-        height: 100px;
-        min-width: 125px;
-        margin: 2px;
-        border-radius: 5px;
-        background-color: white;
-        padding: 5px;
-        cursor: pointer;
 
-        &.current-day {
-            border: 2px solid #0078d4;
-            color: #0078d4;
+.calendar-toolbar {
+    background-color: #0078d4;
+    color: white;
+
+    .toolbar-button {
+        background-color: #0078d4;
+        margin: 0px;
+        padding: 5px 10px;
+        text-align: center;
+        vertical-align: middle;
+        outline: none;
+        font-size: 25px;
+        font-weight: 100;
+        color: white;
+        border: none;
+
+        &:hover {
+            background-color: #004578;
+            color: white;
         }
 
-        &.selected-day {
-            border: 2px solid #004578;
-            color: #004578;
-            background-color: #c7e0f4;
+        &:focus {
+            border: none;
+            outline: none;
         }
+    }
+}
 
-        .day-event {
-            font-size: 10px;
+.fluent-input {
+    display: block;
+    width: 100%;
+    padding: 3px 7px;
+    margin: 10px 0px;
+    border: 1px solid #3b3a39;
+
+    &:focus {
+        outline: none;
+        border: 2px dashed #0078d4;
+    }
+}
+
+.card {
+    margin: 10px;
+
+    .card-content {
+        padding: 10px;
+
+        .event {
+            border-radius: 5px;
+            margin: 10px 5px;
             padding: 5px;
         }
     }

@@ -1,221 +1,282 @@
 ﻿@page "/calendar/{Name}"
 
 <div class="row">
-    <div class="col-sm-12 col-lg-9">
-        <table class="calendar-table">
-            <thead>
-                <tr>
-                    <td>Sunday</td>
-                    <td>Monday</td>
-                    <td>Tuesday</td>
-                    <td>Wednesday</td>
-                    <td>Thursday</td>
-                    <td>Friday</td>
-                    <td>Saturday</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                            <div class="day-event yellow-green">
-                                Watching Microsoft Build
+    <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="calendar">
+            <div class="row">
+                <div class="col-sm-12 col-lg-2">
+                    <select name="" id="" class="fluent-input">
+                        <option value="">2019</option>
+                        <option value="">2020</option>
+                        <option value="">2021</option>
+                    </select>
+                </div>
+                <div class="col-sm-12 col-lg-2">
+                    <select name="" id="" class="fluent-input">
+                        <option value="">January</option>
+                        <option value="">February</option>
+                        <option value="">March</option>
+                        <option value="">April</option>
+                        <option value="">May</option>
+                        <option value="">June</option>
+                        <option value="">July</option>
+                        <option value="">August</option>
+                        <option value="">September</option>
+                        <option value="">October</option>
+                        <option value="">November</option>
+                        <option value="">December</option>
+                    </select>
+                </div>
+            </div>
+            <table class="calendar-table">
+                <thead>
+                    <tr>
+                        <td>Sun</td>
+                        <td>Mon</td>
+                        <td>Tue</td>
+                        <td>Wed</td>
+                        <td>Thu</td>
+                        <td>Fri</td>
+                        <td>Sat</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
                             </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="day current-day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                            <div class="day-event magenta">
-                                Watching Microsoft Build
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
                             </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day selected-day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                            <div class="day-event red-orange">
-                                Watching Microsoft Build
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
                             </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                            <div class="day-event yellow">
-                                Watching Microsoft Build
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
                             </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="day shadow-effect">
-                            <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                                <div class="day-event yellow-green">
+                                    Watching Microsoft Build
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="day current-day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                                <div class="day-event magenta">
+                                    Watching Microsoft Build
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day selected-day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                                <div class="day-event red-orange">
+                                    Watching Microsoft Build
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                                <div class="day-event yellow">
+                                    Watching Microsoft Build
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="day shadow-effect">
+                                <h3 class="ms-fontSize-24 ms-fontWeight-regular">01</h3>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div class="col-sm-12 col-lg-3"></div>
+    <div class="col-sm-12 col-md-12 col-lg-3">
+        <div class="card ms-depth-16">
+            <div class="calendar-toolbar">
+                <button class="toolbar-button">
+                    <i class="ms-Icon ms-Icon--AddEvent"></i>
+                </button>
+            </div>
+            <div class="card-content">
+                <input type="text" class="fluent-input" placeholder="Event Subject" />
+                <input type="time" class="fluent-input" />
+                <input type="time" class="fluent-input" />
+            </div>
+        </div>
+        <div class="card ms-depth-16">
+            <div class="card-content">
+                <h3 class="ms-fontSize-22 ms-fontWeight-regular">Tuesday, 22 May 2020</h3>
+                <div class="event shadow-effect magenta">
+                    <h3 class="ms-fontSize-14 ms-fontWeight-regular">6:00pm to 8:00pm</h3>
+                    <p class="ms-fontSize-11 ms-fontWeight-regular">Lorem ipsum</p>
+                </div>
+                <div class="event shadow-effect yellow">
+                    <h3 class="ms-fontSize-14 ms-fontWeight-regular">6:00pm to 8:00pm</h3>
+                    <p class="ms-fontSize-11 ms-fontWeight-regular">Lorem ipsum</p>
+                </div>
+                <div class="event shadow-effect red-orange">
+                    <h3 class="ms-fontSize-14 ms-fontWeight-regular">6:00pm to 8:00pm</h3>
+                    <p class="ms-fontSize-11 ms-fontWeight-regular">Lorem ipsum</p>
+                </div>
+                <div class="event shadow-effect yellow-green">
+                    <h3 class="ms-fontSize-14 ms-fontWeight-regular">6:00pm to 8:00pm</h3>
+                    <p class="ms-fontSize-11 ms-fontWeight-regular">Lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 @code {
