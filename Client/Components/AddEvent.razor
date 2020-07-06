@@ -1,0 +1,54 @@
+﻿@using System.Net.Http
+@inject HttpClient Http 
+
+<div class="ms-depth-16 card">
+    <EditForm Model="_calendarEvent" OnValidSubmit="AddEventToSelectedDay">
+        <div class="calendar-toolbar">
+            <button class="toolbar-button" type="submit">
+                <i class="ms-Icon ms-Icon--AddEvent"></i>
+            </button>
+        </div>
+        <div class="card-content">
+            <h3 class="ms-fontSize-24 ms-fontWeight-regular">
+                @SelectedDay.Date.ToString("D")
+            </h3>
+            <input type="text" @bind-value="_calendarEvent.Subject" required class="fluent-input" placeholder="Event Subject" />
+            <input type="time" @bind-value="_calendarEvent.StartDate" required class="fluent-input" />
+            <input type="time" @bind-value="_calendarEvent.EndDate" required class="fluent-input" />
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    private CalendarEvent _calendarEvent = new CalendarEvent();
+
+    [Parameter]
+    public CalendarDay SelectedDay { get; set; }
+
+    private async Task AddEventToSelectedDay()
+    {
+        _calendarEvent.StartDate = new DateTime(
+            SelectedDay.Date.Year,
+            SelectedDay.Date.Month,
+            SelectedDay.Date.Day,
+            _calendarEvent.StartDate.Hour,
+            _calendarEvent.StartDate.Minute,
+            0);
+
+        _calendarEvent.StartDate = new DateTime(
+            SelectedDay.Date.Year,
+            SelectedDay.Date.Month,
+            SelectedDay.Date.Day,
+            _calendarEvent.EndDate.Hour,
+            _calendarEvent.EndDate.Minute,
+            0);
+
+        if (SelectedDay.Events == null)
+        {
+            SelectedDay.Events = new List<CalendarEvent>();
+        }
+
+        var response = await Http.PostAsJsonAsync("https://localhost:5001/api/v1/CalendarEvents", _calendarEvent);
+        SelectedDay.Events.Add(_calendarEvent);
+    }
+}
